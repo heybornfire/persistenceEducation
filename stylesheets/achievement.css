@@ -1,0 +1,46 @@
+.marquee {
+
+    transform: translateY(100%);
+    
+}
+
+.marquee-rtl {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(100%);
+}
+
+.marquee-rtl img {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+@keyframes left-one {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+.marquee {
+    animation: left-one 20s linear infinite;
+}
+
+.marquee-rtl {
+    animation: left-two 15s linear infinite;
+}
